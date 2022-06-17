@@ -1,4 +1,5 @@
 {
+  "name": "@hexlet/nodejs-package",
   "type": "module",
   "bin": {
     "brain-games": "bin/brain-games.js"
