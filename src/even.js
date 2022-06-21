@@ -9,11 +9,8 @@ const startGame = () => {
   console.log(`Answer "yes" if the number is even, otherwise answer "no".`);
 
   const even = (num) => num % 2 === 0;
-
-  const getAnswer = () => {
-    const question = getRandomNum();
-    const answer = even(question) ? 'yes' : 'no';
-  }
+  const question = getRandomNum();
+  const answer = even(question) ? 'yes' : 'no';
 
   for (let i = 0; i < 3; i += 1) {
     console.log(`Question: ${question}`);
