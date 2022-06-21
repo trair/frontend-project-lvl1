@@ -1,7 +1,3 @@
-import readlineSync from 'readline-sync';
+import startGame from "../src/even.js";
 
-const startGame = () => {
-  
-};
-
-const getRandomNum = () => Math.round(Math.random() * 100);
+startGame();
