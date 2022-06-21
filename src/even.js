@@ -1,4 +1,4 @@
-import readlineSync from 'readline-sync';
+import readlineSync, { question } from 'readline-sync';
 
 const getRandomNum = () => Math.round(Math.random() * 100);
 
@@ -11,8 +11,15 @@ const startGame = () => {
   const even = (num) => num % 2 === 0;
 
   const getAnswer = () => {
-    
+    const question = getRandomNum();
+    const answer = even(question) ? 'yes' : 'no';
   }
 
-  for (let i = 0; i < 3; i += 1) {}
+  for (let i = 0; i < 3; i += 1) {
+    console.log(`Question: ${question}`);
+    const userAnswer = readlineSync.question(`Your answer: `);
+    if (userAnswer === answer) {
+        console.log(`Correct!`);
+    }
+  }
 };
