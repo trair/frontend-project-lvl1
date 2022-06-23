@@ -11,7 +11,7 @@ const startGame = () => {
     console.log(`What is the result of the expression?`);
   
     for (let i = 0; i < 3; i += 1) {
-        const calculate = () => {
+        const calculate = (num1, num2, operator) => {
             switch (operator) {
                 case '+':
                     return num1 + num2;
@@ -28,7 +28,7 @@ const startGame = () => {
       const num2 = getRandomNum();
       const operator = operators[i];
       const question = `${num1} ${operator} ${num2}`;
-      const answer = calculate(num1, num2, operator);
+      const answer = String(calculate(num1, num2, operator));
       console.log(`Question: ${question}`);
       const userAnswer = readlineSync.question(`Your answer: `);
       if (userAnswer === answer) {
