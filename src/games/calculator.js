@@ -11,10 +11,24 @@ const startGame = () => {
     console.log(`What is the result of the expression?`);
   
     for (let i = 0; i < 3; i += 1) {
+        const calculate = () => {
+            switch (operator) {
+                case '+':
+                    return num1 + num2;
+                case '-':
+                    return num1 - num2;
+                case '*':
+                    return num1 * num2;
+                default:
+                    return false;
+            }
+        };
+      
       const num1 = getRandomNum();
       const num2 = getRandomNum();
-      const question = `${num1} ${operators[i]} ${num2}`;
-      const answer = Number(num1 + operators[i] + num2);
+      const operator = operators[i];
+      const question = `${num1} ${operator} ${num2}`;
+      const answer = calculate(num1, num2, operator);
       console.log(`Question: ${question}`);
       const userAnswer = readlineSync.question(`Your answer: `);
       if (userAnswer === answer) {
