@@ -11,12 +11,11 @@ const startGame = () => {
     for (let i = 0; i < 3; i += 1) {
         const arr1 = [];
         const isProgression = () => {
-        const getRandomNum = () => Math.round(Math.random() * 100);
-        const num = getRandomNum();
+        const num1 = getRandomNum();
         const random = Math.round(Math.random() * 5)
-        const num2 = random;
-        for (let i = 0; i < num2 * 10; i += num2) {
-            arr1.push(num + i);
+        const num3 = random + 1;
+        for (let i = 0; i < num3 * 10; i += num3) {
+            arr1.push(num1 + i);
         }
     
         return arr1;
@@ -25,10 +24,10 @@ const startGame = () => {
         isProgression();
     
         const getRandom = Math.round(Math.random() * 9);
-        const num1 = getRandom;
-        const answer = arr1[num1];
+        const num2 = getRandom;
+        const answer = arr1[num2];
         const arr2 = arr1;
-        arr2[num1] = '..';
+        arr2[num2] = '..';
         const question = arr2;
 
         console.log(`Question: ${question}`);
