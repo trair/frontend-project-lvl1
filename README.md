@@ -6,12 +6,12 @@
 
 Установка: $ npm link
 
-brain-even - https://asciinema.org/a/vHC5NdcJzzuRFQFdNxecrInt1
+brain-even: https://asciinema.org/a/vHC5NdcJzzuRFQFdNxecrInt1
 
-brain-calculator - https://asciinema.org/a/vUsZ2Jowg603aXhuf81sdzZD9
+brain-calculator: https://asciinema.org/a/vUsZ2Jowg603aXhuf81sdzZD9
 
-brain-prime - https://asciinema.org/a/tp8BbjVCwtFoWhDRH85fzuUah
+brain-prime: https://asciinema.org/a/tp8BbjVCwtFoWhDRH85fzuUah
 
-brain-GCD - https://asciinema.org/a/5DjxFB3oxPtWa4MlQaUHZhMwD
+brain-GCD: https://asciinema.org/a/5DjxFB3oxPtWa4MlQaUHZhMwD
 
-brain-progression - https://asciinema.org/a/vJQzunAykiqY4Hlpp3kMk3Qm2
+brain-progression: https://asciinema.org/a/vJQzunAykiqY4Hlpp3kMk3Qm2
