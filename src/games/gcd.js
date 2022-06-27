@@ -10,10 +10,10 @@ const startGame = () => {
     console.log(`Find the greatest common divisor of given numbers.`);
 
     for (let i = 0; i < 3; i += 1) {
+        const num = getRandomNum();
         const num1 = getRandomNum();
-        const num2 = getRandomNum();
-        const question = `${num1} ${num2}`;
-        const answer = num1 % num2;
+        const question = `${num} ${num1}`;
+        const answer = num % num1;
         console.log(`Question: ${question}`);
         const userAnswer = readlineSync.question(`Your answer: `);
         if (userAnswer === String(answer)) {
