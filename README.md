@@ -10,4 +10,3 @@ Brain-prime - https://asciinema.org/a/tp8BbjVCwtFoWhDRH85fzuUah
 
 Brain-GCD - https://asciinema.org/a/5DjxFB3oxPtWa4MlQaUHZhMwD
 
-Brain-progression - https://asciinema.org/a/vJQzunAykiqY4Hlpp3kMk3Qm2
