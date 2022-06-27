@@ -37,7 +37,7 @@ const startGame = () => {
         }
 
     }
-    console.log(`Congratualtions ${userName}!`);
+    console.log(`Congratualtions, ${userName}!`);
   };
   
   export default startGame;
