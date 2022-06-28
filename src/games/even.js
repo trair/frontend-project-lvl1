@@ -7,7 +7,7 @@ import askNameAndGreet from '../cli.js';
 const userName = askNameAndGreet();
 
 const startGame = () => {
-  console.log(`Answer "yes" if the number is even, otherwise answer "no".`);
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   const even = (num) => num % 2 === 0;
 
@@ -15,13 +15,13 @@ const startGame = () => {
     const question = getRandomNum(1, 10);
     const answer = even(question) ? 'yes' : 'no';
     console.log(`Question: ${question}`);
-    const userAnswer = readlineSync.question(`Your answer: `);
+    const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === answer) {
-        console.log(`Correct!`);
+      console.log('Correct!');
     } else {
-        console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}.`);
-        console.log(`Let's try again, ${userName}!`);
-        return;
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}.`);
+      console.log(`Let's try again, ${userName}!`);
+      return;
     }
   }
 
