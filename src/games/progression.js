@@ -8,31 +8,31 @@ const userName = askNameAndGreet();
 
 const startGame = () => {
     console.log(`What number is missing in the progression?`);
-    for (let i = 0; i < 3; i += 1) {
-        const arr1 = [];
-        const isProgression = () => {
-        const num1 = getRandomNum();
-        const random = Math.round(Math.random() * 5)
-        const num3 = random + 1;
-        for (let i = 0; i < num3 * 10; i += num3) {
-            arr1.push(num1 + i);
+    const isProg = (start, length, counter) => {
+        const result = [];
+        for (let i = 0; i < length; i += 1) {
+          result.push(start + counter * i);
         }
-    
-        return arr1;
-        };
-    
-        isProgression();
-    
-        const getRandom = Math.round(Math.random() * 9);
-        const num2 = getRandom;
-        const answer = arr1[num2];
-        const arr2 = arr1;
-        arr2[num2] = '..';
-        const question = arr2;
-
+        return result;
+      };
+    const missingElement = (progression, item) => {
+      const newProg = progression.slice(0);
+      const newItem = item;
+      newProg[newItem] = '..';
+      return newProg.join(' ');
+    };
+    for (let i = 0; i < 3; i += 1) {
+        const num1 = getRandomNum(1, 10);
+        const randomStep = getRandomNum(1, 5);
+        const progLength = getRandomNum(5, 10);
+        const randomElement = getRandomNum(1, progLength);
+        const progression = isProg(num1, progLength, randomStep);
+        const question = missingElement(progression, randomElement);
+        const deliteElement = num1 + (randomStep * randomElement);
+        const answer = String(deliteElement);
         console.log(`Question: ${question}`);
         const userAnswer = readlineSync.question(`Your answer: `);
-        if (userAnswer === String(answer)) {
+        if (userAnswer === answer) {
             console.log(`Correct!`);
         } else {
             console.log(`${userAnswer} is wrong answer  ;(. Correct answer was ${answer}`);

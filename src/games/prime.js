@@ -24,7 +24,7 @@ const startGame = () => {
     console.log(`Answer "yes" if given number is prime. Otherwise answer "no".`);
 
     for (let i = 0; i < 3; i += 1) {
-        const question = getRandomNum();
+        const question = getRandomNum(1, 100);
         const answer = isPrime(question) ? 'yes' : 'no';
         console.log(`Question: ${question}`);
         const userAnswer = readlineSync.question(`Your answer: `);

@@ -25,8 +25,8 @@ const startGame = () => {
             }
         };
       
-      const num1 = getRandomNum();
-      const num2 = getRandomNum();
+      const num1 = getRandomNum(1, 10);
+      const num2 = getRandomNum(1, 10);
       const operator = operators[i];
       const question = `${num1} ${operator} ${num2}`;
       const answer = String(calculate(num1, num2, operator));

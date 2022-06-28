@@ -12,7 +12,7 @@ const startGame = () => {
   const even = (num) => num % 2 === 0;
 
   for (let i = 0; i < 3; i += 1) {
-    const question = getRandomNum();
+    const question = getRandomNum(1, 10);
     const answer = even(question) ? 'yes' : 'no';
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question(`Your answer: `);
