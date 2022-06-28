@@ -1,6 +1,6 @@
-import getRandomNum from '../getRandomNum.js';
-
 import readlineSync from 'readline-sync';
+
+import getRandomNum from '../getRandomNum.js';
 
 import askNameAndGreet from '../cli.js';
 

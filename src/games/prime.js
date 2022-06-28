@@ -12,7 +12,7 @@ const isPrime = (num) => {
   }
 
   for (let i = 2; i < num; i += 1) {
-     if (num % i === 0) {
+    if (num % i === 0) {
       return false;
     }
   }
@@ -27,7 +27,7 @@ const startGame = () => {
     const question = getRandomNum(1, 100);
     const answer = isPrime(question) ? 'yes' : 'no';
     console.log(`Question: ${question}`);
-    const userAnswer = readlineSync.question(`Your answer: `);
+    const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === answer) {
       console.log('Correct!');
     } else {
@@ -37,8 +37,7 @@ const startGame = () => {
     }
 
   }
-   console.log(`Congratulations, ${userName}!`);
+  console.log(`Congratulations, ${userName}!`);
 };
 
-  export default startGame;
-  
+export default startGame;
