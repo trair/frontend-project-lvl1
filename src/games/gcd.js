@@ -30,7 +30,6 @@ const startGame = () => {
       console.log(`Let's try again, ${userName}!`);
       return;
     }
-
   }
   console.log(`Congratulations, ${userName}!`);
 };
