@@ -9,6 +9,8 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
+  "description": "Brain Games is bundle of mini-games with command-line interface",
+  "author": "trair",
   "dependencies": {
     "readline-sync": "^1.4.10"
   },
