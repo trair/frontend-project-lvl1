@@ -1,6 +1,6 @@
 import getRandomNumber from '../getRandomNumber.js';
 
-import game from '../index.js';
+import runEngine from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 const isGCD = (num1, num2) => {
@@ -10,7 +10,7 @@ const isGCD = (num1, num2) => {
   return isGCD(num2, num1 % num2);
 };
 
-const gameData = () => {
+const getGameData = () => {
   const num1 = getRandomNumber(1, 50);
   const num2 = getRandomNumber(1, 50);
   const question = `${num1} ${num2}`;
@@ -19,6 +19,6 @@ const gameData = () => {
 };
 
 const startGCDGame = () => {
-  game(description, gameData);
+  runEngine(description, getGameData);
 };
 export default startGCDGame;
