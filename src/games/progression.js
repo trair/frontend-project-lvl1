@@ -1,47 +1,30 @@
-import readlineSync from 'readline-sync';
+import getRandomNumber from '../getRandomNumber.js';
 
-import getRandomNum from '../getRandomNum.js';
+import game from '../index.js';
 
-import askNameAndGreet from '../cli.js';
+const description = 'What number is missing in the progression?';
 
-const userName = askNameAndGreet();
-
-const startGame = () => {
-  console.log('What number is missing in the progression?');
-  const isProg = (start, length, counter) => {
-    const result = [];
-    for (let i = 0; i < length; i += 1) {
-      result.push(start + counter * i);
-    }
-    return result;
-  };
-  const missingElement = (progression, item) => {
-    const newProg = progression.slice(0);
-    const newItem = item;
-    newProg[newItem] = '..';
-    return newProg.join(' ');
-  };
-  for (let i = 0; i < 3; i += 1) {
-    const num1 = getRandomNum(1, 10);
-    const randomStep = getRandomNum(1, 5);
-    const progLength = getRandomNum(5, 10);
-    const randomElement = getRandomNum(1, progLength);
-    const progression = isProg(num1, progLength, randomStep);
-    const question = missingElement(progression, randomElement);
-    const deliteElement = num1 + (randomStep * randomElement);
-    const answer = String(deliteElement);
-    console.log(`Question: ${question}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-    if (userAnswer === answer) {
-      console.log('Correct!');
-    } else {
-      console.log(`${userAnswer} is wrong answer  ;(. Correct answer was ${answer}`);
-      console.log(`Let's try again, ${userName}!`);
-      return;
-    }
+const isProgression = (firstNumber, step, lengthOfProgression) => {
+  const result = [];
+  for (let i = 0; i <= lengthOfProgression; i += 1) {
+    result.push(firstNumber + step * i);
   }
-
-  console.log(`Congratulations, ${userName}!`);
+  return result;
 };
 
-export default startGame;
+const gameData = () => {
+  const lengthOfProgression = getRandomNumber(10, 20);
+  const firstNumber = getRandomNumber(1, 50);
+  const step = getRandomNumber(1, 10);
+  const progression = isProgression(firstNumber, step, lengthOfProgression);
+  const hiddenNumber = getRandomNumber(1, 3);
+  const correctAnswer = String(progression[hiddenNumber]);
+  progression[hiddenNumber] = '..';
+  const question = progression.join(' ');
+  return [question, correctAnswer];
+};
+
+const startProgressionGame = () => {
+  game(description, gameData);
+};
+export default startProgressionGame;
