@@ -3,22 +3,22 @@ import getRandomNumber from '../utils.js';
 import runEngine from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
-const isGCD = (num1, num2) => {
-  if (num1 === num2 || num2 === 0) {
-    return num1;
+const getGCD = (number1, number2) => {
+  if (number1 === number2 || number2 === 0) {
+    return number1;
   }
-  return isGCD(num2, num1 % num2);
+  return getGCD(number2, number1 % number2);
 };
 
-const getGameData = () => {
-  const num1 = getRandomNumber(1, 50);
-  const num2 = getRandomNumber(1, 50);
-  const question = `${num1} ${num2}`;
-  const correctAnswer = String(isGCD(num1, num2));
+const generateRound = () => {
+  const number1 = getRandomNumber(1, 50);
+  const number2 = getRandomNumber(1, 50);
+  const question = `${number1} ${number2}`;
+  const correctAnswer = String(getGCD(number1, number2));
   return [question, correctAnswer];
 };
 
 const startGCDGame = () => {
-  runEngine(description, getGameData);
+  runEngine(description, generateRound);
 };
 export default startGCDGame;

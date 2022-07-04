@@ -6,7 +6,8 @@
 
 Установка: $ npm link
 
-brain-even: https://asciinema.org/a/vHC5NdcJzzuRFQFdNxecrInt1
+brain-even: [![asciicast](https://asciinema.org/a/vHC5NdcJzzuRFQFdNxecrInt1.svg)](https://asciinema.org/a/vHC5NdcJzzuRFQFdNxecrInt1)
+<a href="https://asciinema.org/a/vHC5NdcJzzuRFQFdNxecrInt1" target="_blank"><img src="https://asciinema.org/a/vHC5NdcJzzuRFQFdNxecrInt1.svg" /></a>
 
 brain-calculator: https://asciinema.org/a/vUsZ2Jowg603aXhuf81sdzZD9
 
