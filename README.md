@@ -7,12 +7,11 @@
 Установка: $ npm link
 
 brain-even: [![asciicast](https://asciinema.org/a/vHC5NdcJzzuRFQFdNxecrInt1.svg)](https://asciinema.org/a/vHC5NdcJzzuRFQFdNxecrInt1)
-<a href="https://asciinema.org/a/vHC5NdcJzzuRFQFdNxecrInt1" target="_blank"><img src="https://asciinema.org/a/vHC5NdcJzzuRFQFdNxecrInt1.svg" /></a>
 
-brain-calculator: https://asciinema.org/a/vUsZ2Jowg603aXhuf81sdzZD9
+brain-calculator: [![asciicast](https://asciinema.org/a/vUsZ2Jowg603aXhuf81sdzZD9.svg)](https://asciinema.org/a/vUsZ2Jowg603aXhuf81sdzZD9)
 
-brain-prime: https://asciinema.org/a/tp8BbjVCwtFoWhDRH85fzuUah
+brain-prime: [![asciicast](https://asciinema.org/a/tp8BbjVCwtFoWhDRH85fzuUah.svg)](https://asciinema.org/a/tp8BbjVCwtFoWhDRH85fzuUah)
 
-brain-GCD: https://asciinema.org/a/5DjxFB3oxPtWa4MlQaUHZhMwD
+brain-GCD: [![asciicast](https://asciinema.org/a/5DjxFB3oxPtWa4MlQaUHZhMwD.svg)](https://asciinema.org/a/5DjxFB3oxPtWa4MlQaUHZhMwD)
 
-brain-progression: https://asciinema.org/a/vJQzunAykiqY4Hlpp3kMk3Qm2
+brain-progression: [![asciicast](https://asciinema.org/a/vJQzunAykiqY4Hlpp3kMk3Qm2.svg)](https://asciinema.org/a/vJQzunAykiqY4Hlpp3kMk3Qm2)
